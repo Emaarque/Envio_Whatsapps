@@ -139,7 +139,7 @@ label1.pack()
 
 Button (root, text="Buscar Planilla", command=OpenFile).pack()
 
-label1=Label(text="Enviar las deteccion de covid por Whatsapp.", bg='white')
+label1=Label(text="Enviar los mensajes por Whatsapp.", bg='white')
 
 label1.pack()
 
