@@ -1,7 +1,8 @@
 import pandas as pd
 from datetime import datetime
-from send_mjs import send_msj
-from browser import browser
+from send_mjs import send_msj, send_msj_img
+#from browser import browser
+from browser_chrome import browser
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -32,12 +33,13 @@ def formato_df(df):
     df['Telefono']= df['Telefono'].replace('[a-zA-Z]','',regex=True)
     df['Telefono']= df['Telefono'].replace(' ','',regex=True)
     
+    '''
     df['Mensaje']= df['Mensaje'].replace('Nombre','{Nombre}',regex=True)
     df['Mensaje']= df['Mensaje'].replace('Categoria','{Categoria}',regex=True)
     df['Mensaje']= df['Mensaje'].replace('Edad','{Edad}',regex=True)
-    df['Mensaje']= df['Mensaje'].replace('Fecha','{Fecha}',regex=True)
+    df['Mensaje']= df['Mensaje'].replace('Fecha','{Fecha}',regex=True)'''
         
-    
+    print(df.columns.values[0])
     
     #df= agrega_caracteristica(df)
     df['Envío Telefono']= 'NO ENVIADO'
@@ -56,11 +58,48 @@ def envio(msg, df, i):
             send_msj(msg,telefono,df,i,browser)
         except:
                 pass
-            
-        
+
+def envio_img(msg, df, i, filepath):
+    if (pd.isnull(df['Telefono'][i]) == True) or (len(df['Telefono'][i])== 0):
+        #df.loc[:, (i, 'Envío Telefono')] = 'NO ENVIADO'
+        #df['Envío Telefono'][i]= 'NO ENVIADO'
+        df.loc[i,'Envío Telefono']= 'NO ENVIADO'
+    
+    else:
+        try:
+            telefono = '+549'+str(df['Telefono'][i])
+            send_msj_img(msg,telefono,filepath,df,i,browser)
+        except:
+                pass
+    
+#FUNCION PARA EL ENVIO DE IMAGENES            
+def envio_whatsapp_image(df,i,filepath):
+    print("llego a fn")
+    #estructura de mensaje como el otro
+    txt=df['Mensaje']
+    for j in range(len(df.columns.values)):
+        #df[df.columns.values[5]][i]= df[df.columns.values[5]][i].replace(df.columns.values[j], str(df[df.columns.values[j]][i]))
+        df.loc[i,'Mensaje']= df['Mensaje'][i].replace(df.columns.values[j], str(df[df.columns.values[j]][i]))
+     
+    #msg=txt.format(Nombre=df['Nombre'][i], Fecha=df['Fecha'][i], Edad=df['Edad'][i], Categoria=df['Categoria'][i]) 
+    msg=df['Mensaje'][i]
+    envio_img(msg, df, i, filepath)
+    
+    #parte de imagen 
+    
+    
+    
+    
 def envio_whatsapp(df, i):
     txt = df['Mensaje'][i]
-    msg=txt.format(Nombre=df['Nombre'][i], Fecha=df['Fecha'][i], Edad=df['Edad'][i], Categoria=df['Categoria'][i]) 
+    #string="Nombre=df['Nombre'][i], Fecha=df['Fecha'][i], Edad=df['Edad'][i], Categoria=df['Categoria'][i]"
+    #forma 2
+    for j in range(len(df.columns.values)):
+        #df[df.columns.values[5]][i]= df[df.columns.values[5]][i].replace(df.columns.values[j], str(df[df.columns.values[j]][i]))
+        df.loc[i,'Mensaje']= df['Mensaje'][i].replace(df.columns.values[j], str(df[df.columns.values[j]][i]))
+     
+    #msg=txt.format(Nombre=df['Nombre'][i], Fecha=df['Fecha'][i], Edad=df['Edad'][i], Categoria=df['Categoria'][i]) 
+    msg=df['Mensaje'][i]
     envio(msg, df, i)
     
 

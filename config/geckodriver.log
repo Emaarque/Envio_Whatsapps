@@ -1,0 +1,58 @@
+1662991424656	geckodriver	INFO	Listening on 127.0.0.1:52435
+1662991427912	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52436" "-no-remote" "-profile" "C:\\Users\\Usuario\\AppData\\Local\\Temp\\rust_mozprofileg2ax3C"
+1662991431490	Marionette	INFO	Marionette enabled
+1662991431510	Marionette	INFO	Listening on port 52445
+WebDriver BiDi listening on ws://localhost:52436
+1662991432570	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Usuario\\AppData\\Local\\Temp\\rust_mozprofileg2ax3C\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52436/devtools/browser/8353e668-2ffd-4a4e-b115-b7726dcf3120
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 292: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: https://web.whatsapp.com/serviceworker.js, line 1: TypeError: Cache.put: Cache got basic response with bad status 206 while trying to add request https://web.whatsapp.com/sequential-ptt-middle_7fa161964e93db72b8d00ae22189d75f.mp3
+JavaScript error: https://web.whatsapp.com/serviceworker.js, line 1: TypeError: Cache.put: Cache got basic response with bad status 206 while trying to add request https://web.whatsapp.com/sequential-ptt-end_62ed28be622237546fd39f9468a76a49.mp3
+1662991993277	Marionette	INFO	Stopped listening on port 52445
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+!!! error running onStopped callback: TypeError: callback is not a function
+ppData\\Local\\Temp\\rust_mozprofileCPrJ8f"
+1662991983565	Marionette	INFO	Marionette enabled
+1662991983570	Marionette	INFO	Listening on port 52563
+WebDriver BiDi listening on ws://localhost:52556
+1662991984205	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Usuario\\AppData\\Local\\Temp\\rust_mozprofileCPrJ8f\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52556/devtools/browser/787ea13c-a4a4-402d-a7f5-339b21d2baf4
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 292: NS_ERROR_FAILURE: Should pass a non-null uri
+1662992031487	Marionette	INFO	Stopped listening on port 52563
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1662992394516	geckodriver	INFO	Listening on 127.0.0.1:52640
+1662992397609	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52641" "-no-remote" "-profile" "C:\\Users\\Usuario\\AppData\\Local\\Temp\\rust_mozprofileosQQSK"
+1662992398166	Marionette	INFO	Marionette enabled
+1662992398170	Marionette	INFO	Listening on port 52647
+WebDriver BiDi listening on ws://localhost:52641
+1662992398859	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Usuario\\AppData\\Local\\Temp\\rust_mozprofileosQQSK\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52641/devtools/browser/4799cf7f-340f-42e2-a68a-097fca121722
+1662992452370	Marionette	INFO	Stopped listening on port 52647
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 24536, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+62992450437	Marionette	INFO	Marionette enabled
+1662992450442	Marionette	INFO	Listening on port 52684
+WebDriver BiDi listening on ws://localhost:52679
+1662992451353	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Usuario\\AppData\\Local\\Temp\\rust_mozprofile6y8LnJ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52679/devtools/browser/0c39bceb-f73d-495d-8398-c900ed80ab48
+1662992556412	Marionette	INFO	Stopped listening on port 52684
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 5288, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+[Parent 5288, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+[Parent 5288, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1662993330460	geckodriver	INFO	Listening on 127.0.0.1:52846
+1662993333518	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52847" "-no-remote" "-profile" "C:\\Users\\Usuario\\AppData\\Local\\Temp\\rust_mozprofileoQp67S"
+1662993334724	Marionette	INFO	Marionette enabled
+1662993334729	Marionette	INFO	Listening on port 52853
+WebDriver BiDi listening on ws://localhost:52847
+1662993335484	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Usuario\\AppData\\Local\\Temp\\rust_mozprofileoQp67S\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52847/devtools/browser/27c241f5-3c84-4e9d-9f3a-260ed4d3eeac
+1662993368699	Marionette	INFO	Stopped listening on port 52853
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 16796, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167

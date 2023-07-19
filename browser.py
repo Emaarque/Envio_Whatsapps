@@ -22,12 +22,13 @@ Webdriverbrowser =int(of.Webdriverbrowser())
 
 option= "False"
 options = Options()
-options.headless = opHeadless
+#options.headless = opHeadless
 firefox_capabilities = DesiredCapabilities.FIREFOX
 firefox_capabilities['marionette'] = True
 firefox_profile = webdriver.FirefoxProfile(perfil_usuario)
 browser = webdriver.Firefox(executable_path=gechodriver, options=options, capabilities=firefox_capabilities,
                                     service_log_path=gechodriver_log, firefox_profile=firefox_profile)
+#browser.get('http://inventwithpython.com')
 
 
 def comprobar_whatsapp(browser):
@@ -38,4 +39,3 @@ def comprobar_whatsapp(browser):
     except Exception:
         return True
         
-
