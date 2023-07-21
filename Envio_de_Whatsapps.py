@@ -4,9 +4,9 @@ from tkinter import filedialog, messagebox
 from tkinter.ttk import Progressbar
 import webbrowser
 import time
-#import funciones_pct as fn
-#from browser import browser,comprobar_whatsapp
-#import OpenFirefox as of
+import funciones_pct as fn
+from browser import browser,comprobar_whatsapp
+import OpenFirefox as of
 import os
 import sys  
 
